@@ -18,16 +18,16 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav" id="changeCategoryList">
           <li class="nav-item activeCategory">
-            <a id="titleNavBar" class="nav-link" href="#" ng-click="changeCategory('')">Accueil<span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué / ici donc, ce n'est pas un simple lien vers une partie du site, mais bien une sélection de catégorie en masquant les autres-->
+            <a class="nav-link titleNavBar" href="#" ng-click="changeCategory('')">Accueil<span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué / ici donc, ce n'est pas un simple lien vers une partie du site, mais bien une sélection de catégorie en masquant les autres-->
           </li>
           <li class="nav-item">
-            <a id="titleNavBar" class="nav-link" href="#" ng-click="changeCategory({category : 'TV'})">TV <span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
+            <a class="nav-link titleNavBar" href="#" ng-click="changeCategory({category : 'TV'})">TV <span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
           </li>
           <li class="nav-item">
-            <a id="titleNavBar" class="nav-link" href="#" ng-click="changeCategory({category : 'computers'})">Ordinateurs <span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
+            <a class="nav-link titleNavBar" href="#" ng-click="changeCategory({category : 'computers'})">Ordinateurs <span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
           </li>
           <li class="nav-item">
-            <a id="titleNavBar" class="nav-link" href="#" ng-click="changeCategory({category : 'smartphones'})">Smartphones <span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
+            <a class="nav-link titleNavBar" href="#" ng-click="changeCategory({category : 'smartphones'})">Smartphones <span class="sr-only">(current)</span></a> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
           </li>
           <li class="nav-item">
             <button href="#myModal" type="button" class="btn grey" id="myBtn" data-toggle="modal">{{totalPriceItems() | number : 2}} € ({{totalQtyKeyBasket()}})<span class="fas fa-shopping-cart fa-2x"></span></button> <!-- BUTTON MODAL -->
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div> <!-- FIN PRESENTATION CFG -->
-    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true"> <!-- DÉBUT DU MODAL AU CLICK SUR LE PANIER-->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true"> <!-- DÉBUT DU MODAL AU CLICK SUR LE LOGO PANIER NAVBAR -->
       <div class="modal-dialog modal-full" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -88,7 +88,7 @@
         <option ng-click="changeOrder('-price')">prix décroissant</option>
       </select>
     </div><!-- FIN OPTION SELECT -->
-    <div class="container-fluid"> <!--DÉBUT // SECTION QUI PERMET L'AFFICHAGE DES PRODUITS ET LE LIEN VERS LE PANIER -->
+    <div class="container-fluid"> <!--DÉBUT // SECTION QUI PERMET L'AFFICHAGE DES PRODUITS ET LE LIEN VERS LE PANIER PAR LE BOUTON "AJOUTER AU PANIER" -->
       <div class="row">
         <div class="card-group col-lg-4 col-md-6 col-xs-12" ng-repeat="cfg in searchFilter = (cfg | filter : filterText)| filter : filterCategory | orderBy : orderby  track by $index">
           <div class="card">
@@ -98,9 +98,9 @@
               <p>{{cfg.desc}}</p>
               <p>{{cfg.price | number : 2}}€</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer"> <!--DÉBUT BOUTON "AJOUTER AU PANIER"-->
               <input type="button" name="addBasket" value="Ajouter au panier" class="btn btn-primary center" ng-click="addBasket($index)" /> <!-- ng-click est une directive qui dit à AngularJS que faire quand un élément HTML est cliqué -->
-            </div>
+            </div> <!-- FIN BOUTON "AJOUTER AU PANIER"-->
           </div>
         </div>
       </div>
@@ -127,10 +127,10 @@
               Nos engagements<br />
               L'espace Presse<br />
               Nos services<br />
-              Essentiel B<br />
+              Magnificient G<br />
               L'espace fidélité<br />
               Cartes & Coffrets cadeaux<br />
-              Boulanger Pro<br />
+              Essentiel Clem<br />
             </p>
           </div>
         </div>

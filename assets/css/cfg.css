@@ -18,7 +18,7 @@ body {
   background-color: inherit;
 }
 
-#titleNavBar{
+.titleNavBar{
   color: white;
 }
 
@@ -135,6 +135,8 @@ h5, h4, h3 {
   }
 }
 /* Modal fin */
+
+
 .activeCategory a{
   color : blue;
 }
