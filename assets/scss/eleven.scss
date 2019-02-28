@@ -213,4 +213,28 @@ margin-left: 300px;
 	100% { opacity: 0; }
 }
 
-/* */
+/* ANIMATION DE TEXTES "NOS PRODUITS" ET "WHAT'S ON TV"*/
+
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+
+
+
+.title{
+  color: transparent;
+  font-size: 80px;
+  background: url("../img/wallp.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  line-height:150px;
+  letter-spacing: 2px;
+  margin-left: 730px;
+}

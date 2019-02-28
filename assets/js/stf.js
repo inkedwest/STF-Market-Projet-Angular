@@ -108,7 +108,11 @@ function tv() {
 			{
 				file: "assets/img/mom.gif",
 				desc: "Mom cryin",
-			}
+			},
+      {
+        file: "assets/img/credits.gif",
+        desc: "End credits"
+      }
 		],
 		gifs = [],
 		channel = 0;
@@ -168,3 +172,20 @@ function tv() {
 	};
 	document.getElementById("channel").addEventListener("click",changeChannel);
 }
+
+/* */
+
+$(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});

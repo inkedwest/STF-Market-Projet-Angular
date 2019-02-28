@@ -223,7 +223,7 @@ h3{
 }
 
 #select{
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 108px;
 }
 
@@ -492,8 +492,8 @@ svg {
 
 .elementToFadeInAndOut {
     opacity: 1;
-    animation: fadeinout 4s infinite forwards;
-    -webkit-animation: fadeinout 4s infinite forwards;
+    animation: fadeinout 4s  forwards;
+    -webkit-animation: fadeinout 4s  forwards;
 
 }
 
@@ -577,6 +577,14 @@ svg {
  color: #ffffff;
 }
 
+#products{
+  color: white;
+  font-size: 40px;
+  margin-left: 780px;
+  margin-top: 50px;
+}
+
+
 /* MUSIC */
 
 #music{
@@ -586,7 +594,6 @@ svg {
 
 
  /* VINTAGE TV */
-
 
 
 main {
@@ -609,6 +616,7 @@ canvas {
 	justify-content: center;
 }
 .tv-body {
+  margin-top: 50px;
 	background-color: #8c5b3d;
 	background-image:
 		radial-gradient(10em 0.4em at 8em 0.8em,#fff,#fff0),

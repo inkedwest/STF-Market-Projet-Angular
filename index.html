@@ -44,7 +44,7 @@
   <div class="row" >   <!-- DÉBUT PRESENTATION STF MARKET -->
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2"> <!-- BOOSTRAP COL 12 POUR UNE LARGEUR D'AFFICHAGE IDENTIDIQUE SUR TOUS LES ÉCRANS -->
       <div id="presentation">
-        <h1 class="duffer brothers elementToFadeInAndOut">A NETFLIX ORIGINAL SERIES</h1> <!--  TITRE -->
+        <h1 class="duffer brothers elementToFadeInAndOut">A NETFLIX ORIGINAL SERIES</h1> <!-- TITRE -->
         <img id="logo" src="assets/img/stf.png"> <!-- LOGO STF -->
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="50%" viewBox="0 2 300 165.75"> <!-- DÉBUT ANIMATION MONSTRE STRANGER-->
           <filter id="f1">
@@ -145,7 +145,10 @@
       </div>
     </div>
   </div> <!-- FIN DU MODAL AU CLICK SUR LE PANIER-->
-  <div id="select"> <!-- DÉBUT OPTION SELECT -->
+
+    <div class="title">GOODIES</div> <!-- DÉBUT GOODIES -->
+
+    <div id="select"> <!-- DÉBUT OPTION SELECT -->
     <select>
       <option ng-click="changeOrder('')">Trier par</option>
       <option ng-click="changeOrder('name')">nom A-Z</option>
@@ -156,7 +159,8 @@
   </div><!-- FIN OPTION SELECT -->
   <div id="particles"></div> <!-- DÉBUT PARTICULES UPSIDE DOWN BACKGROUND  -->
   <div id="particles2"></div>
-  <div id="particles3"></div> <!-- FIN PARTICULES UPSIDE DOWN BACKGROUND  -->  <div class="container-fluid"> <!--DÉBUT // SECTION QUI PERMET L'AFFICHAGE DES PRODUITS ET LE LIEN VERS LE PANIER PAR LE BOUTON "AJOUTER AU PANIER" -->
+  <div id="particles3"></div> <!-- FIN PARTICULES UPSIDE DOWN BACKGROUND  -->
+  <div class="container-fluid"> <!--DÉBUT // SECTION QUI PERMET L'AFFICHAGE DES PRODUITS ET LE LIEN VERS LE PANIER PAR LE BOUTON "AJOUTER AU PANIER" -->
     <div class="row">
       <div class="card-group col-lg-4 col-md-6 col-xs-12" ng-repeat="stf in searchFilter = (stf | filter : filterText)| filter : filterCategory | orderBy : orderby  track by $index">
         <div class="card">
