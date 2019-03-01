@@ -1,8 +1,5 @@
-// Canvas grain by Renārs Vilnis:
-// https://codepen.io/renarsvilnis/pen/YWKRvE
+/* JS POUR ANIMATION ELEVEN DANS PRÉSENTATION */ 
 
-// Falling confetti by Linmiao Xu
-// https://codepen.io/linrock/pen/Amdhr?editors=1010
 
 'use strict';
 
